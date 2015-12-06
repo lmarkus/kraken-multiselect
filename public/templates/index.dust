@@ -2,6 +2,10 @@
 
 {<body}
     <h1>{@pre type="content" key="greeting"/}</h1>
+    {?receivedExcuse}
+        <h2>Yesterday you said you were late for work because of {receivedExcuse}. What's your excuse today?</h2>
+
+    {/receivedExcuse}
     <h3>I was late for work because...</h3>
     <form method="post">
         <!--Include the CSRF token to keep The Kraken happy-->
