@@ -2,4 +2,49 @@
 
 {<body}
     <h1>{@pre type="content" key="greeting"/}</h1>
+    <h3>I was late for work because...</h3>
+    <form method="post">
+        <!--Include the CSRF token to keep The Kraken happy-->
+        <input type="hidden" name="_csrf" value="{_csrf}">
+
+        <select multiple="multiple" name="excuse" size="18">
+            <option value="1">My wife hid all my shoes from me.</option>
+
+            <option value="2">My neighbor said if he saw me come out of the house he’d kill me.</option>
+
+            <option value="3">The city dumped a huge pile of sand in my driveway.</option>
+
+            <option value="4">I got stuck on level 2 of Angry Birds</option>
+
+            <option value="5">I stayed home in solidarity to all the kids working in sweatshops in China.</option>
+
+            <option value="6">I had to meet with my son’s parole officer.</option>
+
+            <option value="7">My electricity went off and my alarm clock said it was 12:00 am when it was really 7:00 am.</option>
+
+            <option value="8">My wife straightened up the house and I couldn’t find my keys.</option>
+
+            <option value="9">I was up all night with a colicky baby.</option>
+
+            <option value="10">We got snowed in.</option>
+
+            <option value="11">Our albino tree frog got out of his cage.</option>
+
+            <option value="12">Somebody left the gate open and the cows got out.</option>
+
+            <option value="13">The landlord changed the lock on the garage and I couldn’t get access to my car.</option>
+
+            <option value="14">A huge tree fell in the driveway and I couldn’t get out.</option>
+
+            <option value="15">My wife got lost in a snowstorm and I had to go find her.</option>
+
+            <option value="16">My boyfriend said he’d kill me if he saw me, so I couldn’t come out of the house for 3 days.</option>
+
+            <option value="17">A police helicopter kept flying over my house and announcing things like don’t come out - stay inside your house.</option>
+
+            <option value="18">The gas meter reader tripped over a bunch of garbage and stuff I had accumulated outside. His pants got all muddy so I washed and dried his pants for him and by the time I got done it was too late.</option>
+        </select>
+        <br>
+        <input type="submit" value="Send Excuses...">
+    </form>
 {/body}
